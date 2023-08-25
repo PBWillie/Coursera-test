@@ -1,0 +1,66 @@
+*{
+	box-sizing: border-box;
+}
+h1{
+	font-size: 200%;
+	text-align: center;
+	margin-bottom: 75px;
+	font-family: verdana, sans-serif;
+}
+/*make sure p isn't intefering with #menu and moving to the next line after #menu*/
+p{
+	position: relative;
+	float: right;
+	font-size: 125%;
+}
+/*general formatting for menu item names*/
+#menu{
+	width:150px;
+	position: relative;
+	font-size: 150%;
+	float: right;
+	text-align: center;
+	border: 1px solid black;
+	font-weight: bold;
+}
+/*create container for #menu and p to sit in*/
+#container1{
+	background-color: grey;
+	height:200px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 40px;
+	overflow: hidden;
+	border: 1px solid;
+	font-family: "comic sans ms", cursive;
+
+}
+#row{
+	width: 100%;
+}
+/*@media for large devices*/
+@media (min-width: 992px){
+	.media-lg{
+		float: left;
+		width: 33%;
+	}
+}
+/*@media for med devices, .media2 is for second line of the menu to make sure it
+fits the screen and is in line with the two menu items above*/
+@media (min-width: 768px) and (max-width: 992px){
+	.media-med{
+		float:left;
+		width:50%;			
+	}
+	.media2{
+		float:left;
+		width: 100%;
+	}
+}
+/*@media for large devices, each item takes up one line*/
+@media (max-width: 767px){
+	.media-sml{
+		float: left;
+		width: 100%;
+	}
+}
